@@ -1,0 +1,55 @@
+html {
+    background-color: rgb(233, 231, 227);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 78, 134);
+    margin-left: 10em;
+   margin: 0em 5em 1em 5em;
+}
+table, th, td {
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  
+  width: 70%;
+}
+.dodgerblue {
+    color: dodgerblue;
+}
+.steelblue {
+    color: steelblue;
+    }
+.coral {
+    color: coral;
+}
+td.left {
+    text-align: left;
+}
+    
+caption {
+    text-align: center;
+     font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+h1, h2 {
+    color: rgba(9, 63, 124, 0.76);
+    padding-top: 40px;
+}
+h1 {
+    text-transform: uppercase;
+}
+.strong {
+    font-weight: bold;
+}
+p {
+    width: 70%;
+    text-align: justify;
+}
+img {
+    width: 70%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

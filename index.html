@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styling&Specificity</title>
+        <link href="./resources/css/index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body >
+        <!--C:\Users\Agne\Dropbox\Training\Coding\Codeacademy\Projects\Hello-world\index.html-->
+        <h1>Meet CSS: Styling and specificity</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro: 3 alternative ways of styling</a></li>
+                <li><a href="#main">Main: CSS specificity</a></li>
+                <li><a href="#extra">Extra: messy multiples</a></li>
+            </ul>
+        </nav>
+                      
+          
+        <!--1rst table starts-->
+        <h2 id=intro>Intro: Three alternative ways of styling</h2>
+        <table>
+            <thead>
+                <tr>
+                    
+                    <th >Description</th>
+                    <th >Code</th>
+                </tr>
+            </thead>
+            <head>
+            <tbody>
+
+                <tr>          
+                    
+                    <td>Inline</td>
+                    <td class="left">&lt;
+                          <span class="steelblue">p</span>
+                          <span class="dodgerblue">style</span><nbr>=</nbr>
+                          <span style="color: coral;">"color: orchid; font-size: 20px;"</span>
+                        &gt;
+                            <span style="color:orchid"> La vie en rose </span>&lt;<span style="color: steelblue;">/p&gt;</span></td>
+                
+                </tr>
+                <tr>
+                    
+                    <td>In "head" section of the page</td>
+                    <td>
+                        <img src="./resources/images/inhead.JPG" alt="code for in head styling">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>In separate .css sheet linked to from the "head"section of the page</td>
+                    <td class="left">&lt; <span class="steelblue">head</span> &gt;<br>
+                        &lt; <span class="steelblue">link</span>
+                         <span class="dodgerblue"> href</span>   <nbr>=</nbr> <span class="coral">"./path/to/stylesheet/style.css"</span>
+                         <span class="dodgerblue">rel</span> <nbr>=</nbr><span class="coral">"stylesheet"</span> 
+                         <span class="dodgerblue">type</span><nbr>=</nbr><span class="coral">"text/css"</span>&gt;<br>
+                         &lt;<nbr>/</nbr><span class="steelblue">head</span>&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="main">Main: CSS selector hierarchy (specificity increases as we go down the list)</h2> 
+        <div><img src="./resources/images/specificity.JPG"; alt="table with specificity rules"></div>
+
+        <p><span class="strong"> Start simple:</span> "CSS Specificity is the set of the rules applied to CSS selectors in order to
+             determine which style is applied to an element. The more specific a CSS style is, the higher point value it accrues, and 
+             the likelier it is to be present on the element's style." @Emma Bostian,
+              <a href="https://dev.to/emmabostian/css-specificity-1kca" target="_blank">https://dev.to/emmabostian/css-specificity-1kca</a>
+        </p>
+        <p><span class="strong">When ready for more complexity: </span>Specificity is a weight that is applied to a given CSS
+             declaration, determined by the number of each 
+             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#Selector_Types" target="_blanc">selector type</a> in the matching
+             selector. When multiple declarations 
+             have equal specificity, the last declaration found in the CSS is applied to the element. Specificity only applies
+              when the same element is targeted by multiple declarations. As per CSS rules, directly targeted elements will 
+              always take precedence over rules which an element inherits from its ancestor.
+              From <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank" > 
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity</a>
+        </p>
+        <p>I also dare you to use <a href="https://specificity.keegan.st/" target="_blanc">specificity calculator.</a>
+        And if you need some specificity hacking - this
+         <a href="https://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/" target="_blanc">page</a> is your friend.</p>
+
+         <h2 id="extra">Extra: Messy multiples</h2>
+         <p>Difficult to find your way amongst multiple values, multiple, chained and descendant selectors?
+              Stare at this table untill it makes sense to you:</p>
+              <div><img src="./resources/images/multiples.JPG"; alt="screenshot"></div>
+
+
+      
+   
+    </body>
+
+</html>
